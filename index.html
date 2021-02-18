@@ -1,9 +1,9 @@
 ---
 title: Démonstrations compilées - Compiled demos
-altLangPage: index.html
 dateModified: 2020-02-18
 description: "Page d'accueil de pages compilés automatiquement par le thème de Canada.ca, GCWeb."
 lang: fr
+layout: default
 ---
 
 <p><a href="/GCWeb/">Retourner à la page principale de GCWeb.</a></p>
@@ -18,7 +18,7 @@ lang: fr
 		<ul>
 		{% for pack in item.libs %}
 			{% assign indexPage = site.data[ "mli-mlo" ].subProjects | where: "nom", pack | first %}
-			<li><a href="/gcweb-compiled-demos/méli-mélo-demos/{{ item.nom }}/{{ pack }}/indexPage.mainpage">{{ pack }}</a></li>
+			<li><a href="/gcweb-compiled-demos/méli-mélo-demos/{{ item.nom }}/{{ pack }}/{{ indexPage.mainpage }}">{{ pack }}</a></li>
 		{% endfor %}
 		</ul>
 	</li>
