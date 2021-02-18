@@ -8,7 +8,7 @@ layout: default
 
 <p><a href="/GCWeb/">Retourner à la page principale de GCWeb.</a></p>
 
-----
+---
 
 <h2 id="méli-mélo">Méli-mélo compilé</h2>
 
@@ -25,11 +25,11 @@ layout: default
 {% endfor %}
 </ul>
 
-----
+---
 
 <h2 id="wet-boew">Aperçu des fonctionalité wet-boew avec le thème de Canada.ca - WET-BOEW feature demos styled with Canada.ca theme</h2>
 <ul>
 {% for demoPage in site.wetboew-demos %}
-  <li><a href="{{ demoPage.url }}" lang="{{ demoPage.language }}" hreflang="{{ demoPage.language }}">{{ demoPage.title }}</a></li>
+  <li><a href="/gcweb-compiled-demos{{ demoPage.url }}" lang="{{ demoPage.language }}" hreflang="{{ demoPage.language }}">{{ demoPage.title }}</a></li>
 {% endfor %}
 </ul>
